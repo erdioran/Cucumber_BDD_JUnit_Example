@@ -34,7 +34,7 @@ It can be viewed as both html and pdf.
 
 -  Project objects -> [objectRepository](https://github.com/erdioran/ErdiOran_UI/tree/master/src/test/java/com/erdioran/objectRepository) folder
 
--  Prokect Hooks -> [Hooks](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/definitions/Hooks.java)
+-  Project Hooks -> [Hooks](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/definitions/Hooks.java)
 
 -  Fixed methods I use for automation -> [AutomationMethods](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/base/AutomationMethods.java)
 
