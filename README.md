@@ -2,42 +2,43 @@
 <b> <h1>   ErdiOran Case with Cucumber BDD & JUnit  </h1> </b> 
 
 ## Run 
- Run this class -> `/src/test/java/com/erdioran/definitions/Runner.java`
+ Run this class -> [/src/test/java/com/erdioran/definitions/Runner.java](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/definitions/Runner.java)
 
 ## Failed Cases Run
-Failed cases in the <b>"Runner.java"</b> class are written to the `"/target/failedrerun.txt"` file.
+Failed cases in the [Runner](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/definitions/Runner.java) class are written to the `"/target/failedrerun.txt"` file.
 
-<b>"RunnerFailed.java"</b> class only runs tests in the fail cases file.
+[RunnerFailed](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/definitions/RunnerFailed.java) class only runs tests in the fail cases file.
 
-Run this class -> `/src/test/java/com/erdioran/definitions/RunnerFailed.java`
+Run this class -> [/src/test/java/com/erdioran/definitions/RunnerFailed.java](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/definitions/RunnerFailed.java)
 
 ## Report 
 It is created inside this file after the test is complete -> `/test-output`
 It can be viewed as both html and pdf.
 
 ## Project Detail
-The browser can be selected by changing the "browser" variable of the `"/src/test/resources/app.properties"` file.
 
-It reads the properties file with the `"/src/main/java/com/erdioran/utils/ConfigManager.java"` class and sends the information to the `"/src/main/java/com/erdioran/base/DriverManager.java"` class to create the driver.
 
-Gets "url" and "test data" from file `"/src/test/resources/data.json"` 
+-  The browser can be selected by changing the "browser" variable of the [app.properties](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/resources/app.properties) file.
 
-Reads `"/src/main/java/com/erdioran/utils/DataManager.java"` with "aaa".
+-  It reads the properties file with the [ConfigManager](https://github.com/erdioran/ErdiOran_UI/blob/master/src/main/java/com/erdioran/utils/ConfigManager.java) class and sends the information to the [DriverManager](https://github.com/erdioran/ErdiOran_UI/blob/master/src/main/java/com/erdioran/base/DriverManager.java) class to create the driver.
 
-Test report settings are in `"extent.properties"` and `"spark-config.xml"` files under `"/src/test/resources"` file.
+-  Gets "url" and "test data" from file [data.json](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/resources/data.json)
 
-Case feature -> `/src/test/resources/features/case.feature`
+-  Reads [data.json](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/resources/data.json) with  [DataManager](https://github.com/erdioran/ErdiOran_UI/blob/master/src/main/java/com/erdioran/utils/DataManager.java)
 
-Case Definitions -> `/src/test/java/com/erdioran/definitions/CaseDefinitions.java`
+-  Test report settings are in [extent.properties](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/resources/extent.properties) and [spark-config.xml](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/resources/spark-config.xml) files under  "/src/test/resources" file.
 
-Project objects -> `/src/test/java/com/erdioran/objectRepository`
+-  Case feature -> [case.feature](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/resources/features/case.feature)
 
-Prokect Hooks -> `/src/test/java/com/erdioran/definitions/Hooks.java`
+-  Case Definitions -> [CaseDefinitions](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/definitions/CaseDefinitions.java)
 
-Fixed methods I use for automation -> `/src/test/java/com/erdioran/base/AutomationMethods.java`
+-  Project objects -> [objectRepository](https://github.com/erdioran/ErdiOran_UI/tree/master/src/test/java/com/erdioran/objectRepository) folder
 
-The methods I created for this case project ->  `/src/test/java/com/erdioran/base/ProjectMethods.java`
+-  Prokect Hooks -> [Hooks](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/definitions/Hooks.java)
 
+-  Fixed methods I use for automation -> [AutomationMethods](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/base/AutomationMethods.java)
+
+-  The methods I created for this case project ->  [ProjectMethods](https://github.com/erdioran/ErdiOran_UI/blob/master/src/test/java/com/erdioran/base/ProjectMethods.java)
 
 
 |         | VERSION |
