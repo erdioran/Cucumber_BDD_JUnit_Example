@@ -6,14 +6,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.lang.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import java.io.File;
 
 import static com.erdioran.base.ProjectMethods.*;
 import static com.erdioran.base.AutomationMethods.click;
@@ -22,7 +19,7 @@ import static com.erdioran.objectRepository.HomePageOR.*;
 import static com.erdioran.objectRepository.SearchPageOR.*;
 import static com.erdioran.objectRepository.TopBarOR.*;
 import static com.erdioran.utils.DataManager.getData;
-import static org.junit.Assert.assertEquals;
+import static com.erdioran.utils.Helper.sleepInSeconds;
 import static org.junit.Assert.assertTrue;
 
 public class CaseDefinitions {
@@ -141,11 +138,7 @@ public class CaseDefinitions {
 
         click(By.xpath("(//a[contains(text(),'Download')])[" + row + "]"));
         LOGGER.info("Clicked download " + row + ".product");
-        try {
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        sleepInSeconds(5000);
 
     }
 
