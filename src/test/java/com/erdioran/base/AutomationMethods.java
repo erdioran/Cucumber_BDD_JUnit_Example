@@ -11,10 +11,16 @@ import org.openqa.selenium.support.ui.FluentWait;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class AutomationMethods {
 
     private static final Logger LOGGER = LogManager.getLogger(AutomationMethods.class);
+
+    public static String getBase64Screenshot()
+    {
+        return ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BASE64);
+    }
 
     public static void enterText(By by, String textToEnter) {
         WebElement element = findObject(by);
@@ -97,6 +103,40 @@ public class AutomationMethods {
     public static String getTabUrl() {
         return DriverManager.getDriver().getCurrentUrl();
     }
+
+
+    public static boolean elementVisibilty(By by) {
+        boolean result = DriverManager.getDriver().findElement(by).isDisplayed();
+        return result;
+    }
+
+
+    public static boolean elementVisibiltyWithSize(By by) {
+
+        return   DriverManager.getDriver().findElements(by).size()>0;
+    }
+
+
+
+
+    public static Object pageScrollHeight() {
+
+        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
+        Object a = js.executeScript("return document.documentElement.scrollHeight");
+        System.out.println(a);
+        return a;
+    }
+
+    public static boolean emailPatternMatches(String emailAddress) {
+        return Pattern.compile("^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$")
+                .matcher(emailAddress)
+                .matches();
+
+
+    }
+
+
+
 
 
 
