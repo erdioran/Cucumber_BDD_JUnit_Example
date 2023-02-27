@@ -1,36 +1,19 @@
-Feature: Lely Case
+Feature: Supplementler.com - UI
 
-  Scenario Outline: Case 1
-    Given user is on "<url>" page
-    When click search button
-    Then check appeared search bar text area
-    When send "<data1>" on search area and click search button
-    Then search result contain "<data1>"
-
-
-    Examples:
-      | url  | data1 |
-      | home | happy |
-
-
-
-  Scenario Outline: Case 2
-    Given user is on "<url>" page
-    And accept cookies
-    When select "<product>" in dropdown
-    Then check "<product>" can be seen
-    And get tab count
-    When click "<link>" "<row>"
-    And switch tab
-    Then check opened on a new tab
-    And get tab title
-    And switch tab
-    And download the "<row-downlaod>" document
-    Then verify document downloaded
-
+  @MAIN @TOPMENU
+  Scenario Outline: Top Menu - All Pages Open From The Top Menu
+    Given open home page
+    When select "<category>" page in top menu
+    Then "<productListTitle>" text is on the product list title
+    When select "<category2>" page in top menu
+    Then "<productListTitle2>" text is on the product list title
+    When select "<category3>" page in top menu
+    Then "<productListTitle3>" text is on the product list title
+    When select "<category4>" page in top menu
+    Then "<productListTitle4>" text is on the product list title
+    When select "<category5>" page in top menu
+    Then "<productListTitle5>" text is on the product list title
 
     Examples:
-      | url      | product  | link               | row | row-downlaod |
-      | techDocs | Luna EUR | View this document | 1   | 1            |
-
-
+      | category     | productListTitle | category2  | productListTitle2 | category3     | productListTitle3 | category4         | productListTitle4 | category5         | productListTitle5 |
+      | Protein Tozu | Protein Tozuxxxx     | Amino Asit | Amino Asit        | Kilo ve Hacim | Kilo ve Hacim     | L-Karnitin ve CLA | L-Karnitin ve CLA | Performans ve Güç | Performans ve Güç |

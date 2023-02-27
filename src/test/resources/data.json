@@ -1,11 +1,18 @@
 {
   "url": {
-    "home": "https://www.lely.com/en",
-    "techDocs": "https://www.lely.com/techdocs/"
+    "base": "https://supplementler.com",
+    "login": "/login"
   },
-  "data": {
-    "searchData": "happy",
-    "machineData": "LUNA EUR"
+  "userData": {
+    "email": "erdioran@gmail.com",
+    "password": "123456Eo--"
+  },
+  "topMenuPages": {
+    "partners": "Protein Tozu",
+    "customer_management": "Amino Asit",
+    "payout_management": "Kilo ve Hacim",
+    "collection_management": "L-Karnitin ve CLA",
+    "account_management": "Performans ve Güç"
   }
 }
 
